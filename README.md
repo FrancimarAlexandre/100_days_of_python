@@ -7,4 +7,18 @@ Neste repositório, serão abordados desde os conceitos básicos até tópicos a
 
 [Python Fluente – Luciano Ramalho](https://amzn.to/3Rzzde6)
 ---
-[📅 Dia 1 — Configuração de Ambiente](dia_01/README.md)
+
+# 📅 Progresso do Desafio — 100 Days of Python
+
+| Dia | Tópico                             | Status     |
+|-----|------------------------------------|------------|
+| 1   | [Configuração de Ambiente](dia_01/README.md)           | ✅ Concluído |
+| 2   |                                    | ⏳ Em breve |
+| 3   |                                    | ⏳ Em breve |
+| 4   |                                    | ⏳ Em breve |
+| 5   |                                    | ⏳ Em breve |
+| ... | ...                                | ...        |
+| 100 |                                    | ⏳ Em breve |
+
+> ✅ Concluído  ⏳ Em breve  ❌ Pendente
+
