@@ -1,4 +1,4 @@
-## 📅 Dia 1 — Sintaxe básica, tipos primitivos e variáveis
+## 📅 Dia 2 — Sintaxe básica, tipos primitivos e variáveis
 
 `Sintaxe`
 
