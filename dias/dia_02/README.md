@@ -78,3 +78,19 @@ Variáveis armazenam valores. Em Python, você não precisa declarar o tipo:
 ### Tipagem dinâmica
 
 Tipagem dinâmica é uma característica de determinadas linguagens de programação que não exigem declarações de tipos de dados. 
+
+### snake_case
+
+snake_case é um estilo de escrita muito usado em programação, onde palavras são separadas por underscores (_) e todas as letras são minúsculas.
+
+#### Onde usar snake_case em Python?
+
+O snake_case é a convenção oficial do Python (conforme a PEP 8) para:
+
+    Nomes de variáveis
+
+    Nomes de funções
+
+    Parâmetros
+
+    Arquivos e módulos
