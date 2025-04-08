@@ -23,3 +23,19 @@ for i in lista:
     if i == 'escola':
         break
     print(i)
+
+# CONTINUE
+
+lista = ['casa','escola','python']
+for i in lista:
+    if i == 'escola':
+        continue
+    print(i)
+
+# RANGE
+
+for x in range(6):
+  print(x)
+
+for x in range(2, 6):
+  print(x)
