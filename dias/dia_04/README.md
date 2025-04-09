@@ -1,10 +1,15 @@
 ## 📅 Dia 4 — Laços (`for`, `while`) e controle de fluxo
 
-Em Python, o laço `for` é usado para iterar sobre objetos iteráveis como listas, tuplas, strings, dicionários e conjuntos.
+
+Em Python, os laços `for` e `while` são usados para repetir blocos de código diversas vezes, com base em coleções de dados (`for`) ou em uma condição (`while`).
 
 ---
 
-## 🔁 Sintaxe Básica
+## 🔁 Laço `for`
+
+O `for` é usado para iterar sobre objetos iteráveis como listas, tuplas, strings, dicionários e conjuntos.
+
+### ✅ Sintaxe Básica
 
 ```python
 fruits = ["apple", "banana", "cherry"]
@@ -12,67 +17,45 @@ for fruit in fruits:
     print(fruit)
 ```
 
-- Não é necessário declarar um índice manualmente.
-- Funciona diretamente sobre itens iteráveis.
-
----
-
-## 🔡 Iterando sobre Strings
-
-Strings também são iteráveis:
+### 🔡 Iterando sobre Strings
 
 ```python
 for letter in "banana":
     print(letter)
 ```
 
----
-
-## ⛔️ `break`: Interrompe o loop
+### ⛔️ `break`: Interrompe o loop
 
 ```python
-fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     if fruit == "banana":
         break
     print(fruit)
 ```
 
----
-
-## 🔁 `continue`: Pula para a próxima iteração
+### 🔁 `continue`: Pula para a próxima iteração
 
 ```python
-fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     if fruit == "banana":
         continue
     print(fruit)
 ```
 
----
-
-## 🔢 `range()`: Iterações com números
+### 🔢 `range()`: Iterações com números
 
 ```python
-# De 0 a 5
-for i in range(6):
+for i in range(6):          # 0 a 5
     print(i)
 
-# De 2 a 5
-for i in range(2, 6):
+for i in range(2, 6):       # 2 a 5
     print(i)
 
-# De 2 a 29, pulando de 3 em 3
-for i in range(2, 30, 3):
+for i in range(2, 30, 3):   # 2 a 29, pulando de 3 em 3
     print(i)
 ```
 
----
-
-## 🧾 `else` com `for`
-
-Executado quando o loop termina normalmente (sem `break`):
+### 🧾 `else` com `for`
 
 ```python
 for i in range(6):
@@ -81,13 +64,9 @@ else:
     print("Finalizado com sucesso!")
 ```
 
-> **Nota:** o bloco `else` **não** será executado se o loop for interrompido com `break`.
+> ⚠️ O bloco `else` **não será executado** se o loop for interrompido com `break`.
 
----
-
-## 🔁 Loops Aninhados
-
-Um loop dentro de outro:
+### 🔁 Loops Aninhados
 
 ```python
 adj = ["red", "big", "tasty"]
@@ -98,18 +77,67 @@ for a in adj:
         print(a, f)
 ```
 
----
-
-## ⛳️ `pass`: Usado para criar um bloco vazio
+### ⛳️ `pass`: Bloco vazio
 
 ```python
 for x in [0, 1, 2]:
-    pass  # Evita erro de sintaxe se o bloco estiver vazio
+    pass
 ```
+
+---
+
+## 🔁 Laço `while`
+
+O `while` executa um bloco de código **enquanto uma condição for verdadeira**.
+
+### ✅ Sintaxe Básica
+
+```python
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+```
+
+### ⛔️ `break` com `while`
+
+```python
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+```
+
+### 🔁 `continue` com `while`
+
+```python
+i = 0
+while i < 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
+```
+
+### 🧾 `else` com `while`
+
+```python
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("Laço finalizado com sucesso!")
+```
+
+> ⚠️ O bloco `else` também é ignorado se houver um `break`.
 
 ---
 
 ## 📚 Referências
 
-- [w3schools](https://www.w3schools.com/python/python_for_loops.asp)
+- [Documentação Oficial do Python – for loops](https://docs.python.org/pt-br/3/tutorial/controlflow.html#for-statements)
+- [Documentação Oficial do Python – while loops](https://docs.python.org/pt-br/3/tutorial/introduction.html#first-steps-towards-programming)
 - *Python Fluente* – Luciano Ramalho
