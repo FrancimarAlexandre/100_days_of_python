@@ -17,8 +17,8 @@ Neste repositório, serão abordados desde os conceitos básicos até tópicos a
 | 1   | [Configuração de ambiente e virtualenv](dias/dia_01/README.md)| ✅ Concluído |
 | 2   | [Sintaxe básica, tipos primitivos e variáveis](dias/dia_02/README.md)| ✅ Concluído |
 | 3   | [Operadores, expressões e estruturas condicionais](dias/dia_03/README.md)| ✅ Concluído  |
-| 4   | [Laços (`for`, `while`) e controle de fluxo](dias/dia_04/README.md)  | ❌ Pendente   |
-| 5   | Listas, tuplas e compreensões                                        | ⏳ Em breve   |
+| 4   | [Laços (`for`, `while`) e controle de fluxo](dias/dia_04/README.md)  | ✅ Concluído  |
+| 5   | Listas, tuplas e compreensões                                        |  ❌ Pendente  |
 | 6   | Dicionários e conjuntos                                              | ⏳ Em breve   |
 | 7   | Strings e manipulação de texto                                       | ⏳ Em breve   |
 | 8   | Funções e escopo                                                     | ⏳ Em breve   |

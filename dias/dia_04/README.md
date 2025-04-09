@@ -1,103 +1,115 @@
-## 📅 Dia 4 — Laços (`for`, `while`,`match`) e controle de fluxo
+## 📅 Dia 4 — Laços (`for`, `while`) e controle de fluxo
 
-`for`
+Em Python, o laço `for` é usado para iterar sobre objetos iteráveis como listas, tuplas, strings, dicionários e conjuntos.
 
-usado oara iterar em uma sequência(lista,tupla,dicionário)
+---
 
-EXEMPLO
+## 🔁 Sintaxe Básica
 
-[código](scripts/for.py)
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+```
 
-LOOPING ATRAVÉS DE UMA CADEIA DE CARACTERES
+- Não é necessário declarar um índice manualmente.
+- Funciona diretamente sobre itens iteráveis.
 
-mesmo as strings são objetos iteráveis, elas contêm uma sequência de caracte
+---
 
-[código](scripts/for.py)
+## 🔡 Iterando sobre Strings
 
-BRAEK
+Strings também são iteráveis:
 
-podemos parar antes de percorrer todos os itens
+```python
+for letter in "banana":
+    print(letter)
+```
 
-[código](scripts/for.py)
+---
 
-CONTINUE
+## ⛔️ `break`: Interrompe o loop
 
-[código](scripts/for.py)
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        break
+    print(fruit)
+```
 
-RANGE
+---
 
-Para percorrer um conjunto de códigos um número especificado de vezes, podemos usar a função range(),
-A função range() retorna uma sequência de números, começando em 0 por padrão, e incrementa em 1 (por padrão) e termina em um número especificado.
+## 🔁 `continue`: Pula para a próxima iteração
 
-A função range() é padronizada para 0 como um valor inicial, no entanto, é possível especificar o valor inicial adicionando um parâmetro: range(2, 6), que valores médios de 2 a 6 (mas não incluindo 6):
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    if fruit == "banana":
+        continue
+    print(fruit)
+```
 
-[código](scripts/for.py)
+---
 
+## 🔢 `range()`: Iterações com números
 
+```python
+# De 0 a 5
+for i in range(6):
+    print(i)
 
-`while`
+# De 2 a 5
+for i in range(2, 6):
+    print(i)
 
-Com o loop `while` podemos executar um conjunto de instruções, desde que uma condição seja verdadeira.
+# De 2 a 29, pulando de 3 em 3
+for i in range(2, 30, 3):
+    print(i)
+```
 
-SINTAXE
+---
 
-    while condição:
-        code block
+## 🧾 `else` com `for`
 
-[código](scripts/while.py)
+Executado quando o loop termina normalmente (sem `break`):
 
-`OBS`-> Lembre-se de incrementar i, ou então o loop continuará para sempre.
+```python
+for i in range(6):
+    print(i)
+else:
+    print("Finalizado com sucesso!")
+```
 
-BREAK
+> **Nota:** o bloco `else` **não** será executado se o loop for interrompido com `break`.
 
-podemos para o loop mesmo que a condição ainda seja válida.
+---
 
-[código](scripts/while.py)
+## 🔁 Loops Aninhados
 
-CONTINUE
+Um loop dentro de outro:
 
-podemos para a iteração atual e continue com a proxima.
+```python
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
 
-[código](scripts/while.py)
+for a in adj:
+    for f in fruits:
+        print(a, f)
+```
 
-ELSE
+---
 
-podemos executar um bloco uma vez quando a condição não é mais válida.
+## ⛳️ `pass`: Usado para criar um bloco vazio
 
-[código](scripts/while.py)
+```python
+for x in [0, 1, 2]:
+    pass  # Evita erro de sintaxe se o bloco estiver vazio
+```
 
-`match`
+---
 
-Em vez de escrever muitas instruções, você pode usar a instrução `match`
+## 📚 Referências
 
-SINTAXE
-
-    match expresion:
-    case x:
-        code block
-    case y:
-        code block
-    case z:
-        code block
-
-[código](scripts/match.py)
-
-- A expreção é avaliada uma vez e compara com os valores de cada `case`.
-
-VALOR PADRÃO
-
-use o caractere underscores `_` como último case, ele vai exercutar quando não houver outras correspondências.
-
-[código](scripts/match.py)
-
-COMBINAR VALORES
-
-use o caractere de barra vertical `|` como um operador para verificar mais de uma correspondência.
-
-[código](scripts/match.py)
-
-INSTRUÇÕES `IF` COMO GUARDS
-
-podemos adicionar instruções na avaliação de caso como uma verificação de condição extra.
-
-[código](scripts/match.py)
+- [w3schools](https://www.w3schools.com/python/python_for_loops.asp)
+- *Python Fluente* – Luciano Ramalho
