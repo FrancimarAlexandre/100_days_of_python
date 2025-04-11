@@ -1,4 +1,4 @@
-# 📅 Dia 5 —  Dicionários e Conjuntos em Python
+# 📅 Dia 6 —  Dicionários e Conjuntos em Python
 
 Python oferece duas estruturas poderosas para agrupar e gerenciar dados: **dicionários** e **conjuntos**. Ambos são úteis para organizar informações de forma eficiente.
 
