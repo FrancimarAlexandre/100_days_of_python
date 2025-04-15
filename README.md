@@ -20,7 +20,7 @@ Neste repositório, serão abordados desde os conceitos básicos até tópicos a
 | 4   | [Laços (`for`, `while`) e controle de fluxo](dias/dia_04/README.md)  | ✅ Concluído  |
 | 5   | [Listas, tuplas e compreensões](dias/dia_05/README.md)               |  ✅ Concluído |
 | 6   | [Dicionários e conjuntos](dias/dia_06/README.md)                     | ⏳ Em breve   |
-| 7   | Strings e manipulação de texto                                       | ⏳ Em breve   |
+| 7   | [Strings e manipulação de texto](dias/dia_07/README.md)              | ⏳ Em breve   |
 | 8   | Funções e escopo                                                     | ⏳ Em breve   |
 | 9   | Argumentos, `*args` e `**kwargs`                                     | ⏳ Em breve   |
 | 10  | Boas práticas com funções (docstrings, type hints)                  | ⏳ Em breve   |
